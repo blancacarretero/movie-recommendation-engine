@@ -1,4 +1,4 @@
-head {
+.jumbotron {
   padding: 0;
   margin: 0;
   background-color:rgb(50,93,121);
@@ -12,18 +12,9 @@ body {
 #contact-info {
     padding: 0;
     margin: 0;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(50,93,121);
 }
 /* .jumbotron {
   position: absolute
 } */
 
-#map {
-  width: 100%;
-  height: 400px;
-  position: absolute;
-  margin:0;
-  padding:0; 
-  border: 1px solid black;
-  border-radius: 8px;
-}
