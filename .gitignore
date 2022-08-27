@@ -1,0 +1,12 @@
+# Files too large for upload will be ignored
+movie_data/README.txt
+movie_data/genome-scores.csv
+movie_data/genome-tags.csv
+movie_data/links.csv
+movie_data/movies.csv
+movie_data/ratings.csv
+movie_data/tags.csv
+
+.ipynb_checkpoints/
+
+.DS_Store
