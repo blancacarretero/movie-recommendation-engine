@@ -1,6 +1,14 @@
 .jumbotron {
-  margin: 0px;
+  
   background-color:rgb(50,93,121);
+}
+.navbar2 {
+  padding: 0px;
+  margin: 0px;
+}
+.navbar {
+  
+  background-color: rgb(249,162,108);
 }
 
 body {
@@ -13,11 +21,12 @@ body {
   
   background-color: rgb(155,215,209)
 } 
-.col-md-2 {
+.col-md-6 {
   
   background-color: rgb(249,162,108)
 
-}  
+
+} 
 /* .center {
   text-align: center;
   border: 3px solid green;
@@ -78,8 +87,3 @@ body {
   color: #9BD7D1;
   color: #325D79;
 } */ 
-
-.navbar2 {
-  padding: 0px;
-  margin: 0px;
-}
