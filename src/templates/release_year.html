@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Dataflix</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+  </head>
+  <body>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <h1>Movie Ratings Analysis</h1>
+            <!-- <p>TEXT ABOUT PROJECT</p> -->
+          </div>
+        </div>
+        <!-- Navagation Bar -->
+        <div class="row">
+        <div class="navbar2 col-md-12" data-interval="false">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">DataFlix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://grouplens.org/datasets/movielens/" target="_blank">Data Source</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Analysis
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="genre">By Genre</a>
+                    <a class="dropdown-item" href="release_year">Release Year</a>
+                    <a class="dropdown-item" href="review_year">Review Year</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="machine_learning">Machine Learning</a>
+                  </div>
+                </li>
+        
+              </ul>
+             <span><a href='https://github.com/blancacarretero/movie-recommendation-engine' target="_blank">Our GitHub Repo</a></span>
+            </div>
+          </nav>
+        </div>
+        </div>
+        <!-- Carosuel -->
+        <div class="row"> 
+          <div class= "col-md-10 carousel-inner">
+            <h3>Ratings by Release Year</h3>
+            <div id= "carouselExampleControls" class="carousel slide center" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-75" src="{{release_urls.all}}" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <h4>Number of Movies Released by Year</h4>
+                  <img class="d-block w-75" src="{{release_urls.action}}" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-75" src="{{release_urls.all_genre}}" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+            <div class="col-md-2">
+              <h2>Our Analysis</h2>                              
+                <li><strong><a href="genre">Rating by Genre</a></strong> </li>
+                <li><strong><a href="release_year">Rating by Release Year</a></strong> </li>
+                <li><strong><a href="review_year">Rating by Review Year</a></strong> </li>
+                <li><strong><a href="machine_learning">Machine Learning</a></strong> </li>
+              <h2>Dataflix Team</h2> 
+                <li><strong>Blanca Carretero</strong> <a href="https://www.linkedin.com/in/blancacarretero/">Linkedin</a></li>
+                <li><strong>Luke Crabtree</strong> <a href="https://www.linkedin.com/in/lukec653/">Linkedin</a></li>
+                <li><strong>Morgan Clark</strong> <a href="https://www.linkedin.com/in/morganaclark/">Linkedin</a></li>
+                <li><strong>Tyler Hill</strong> <a href="https://www.linkedin.com/in/tyler-hill-138877230/">Linkedin</a></li>
+                <li><strong>Kendall Young</strong> <a href="https://www.linkedin.com/in/kendall-young-15876099/">Linkedin</a></li>
+            </div>
+              
+
+                
+                
+
+          </div>
+          </div>
+          
+          </div>
+
+                
+
+                
+                
+
+          
+                         
