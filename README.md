@@ -6,11 +6,11 @@ In this project we will be analyzing a MovieLens movie ratings database provided
 
 The following methods and dependencies will be used:
 
-* Python
+* Python / Flask
 * Pandas
 * Jupyter Notebook
 * Matplotlib
 * SKLearn (KMeans, StandardScaler, PCA, TSNE)
-* HTML / CSS to present the results
+* HTML / CSS / Bootstrap to present the results
 
 https://drive.google.com/drive/folders/1XDCefA1BaBP1fFcp_JU2vIuuGGqWGIFf?usp=sharing
