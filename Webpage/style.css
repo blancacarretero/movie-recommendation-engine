@@ -1,30 +1,44 @@
 .jumbotron {
-  
+  margin:0;
   background-color:rgb(50,93,121);
+  /* background: radial-gradient(ellipse at bottom, rgb(50,93,121,0.588) 0%, rgb(50,93,121)); */
   color: white;
 }
+
+.navbar {
+  background-color: #F9A26C;
+  background: radial-gradient(ellipse at bottom, #F9A26C, #f9a26cca 0%,);
+}
+
 .navbar2 {
   padding: 0px;
   margin: 0px;
+}
+
+.navbar2 a {
+  color: rgb(50,93,121);
 }
 
 .navbar-custom {
   background-color: #4433cc;
 }
 
-
-
 body {
-    
-    background-color:rgb(155,215,209)!important;
-    font-family: 'Courier New', monospace;
-    text-align: center;
+  background-color:rgb(155,215,209)!important;
+  font-family: 'Courier New', monospace;
+  text-align: center;
 }
 .carousel {
   width:1040px;
   height:860px;
 }
 
+.carousel-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .col-md-5 {
   
@@ -44,4 +58,12 @@ body {
 h2 {
   font-weight: bolder;
   color: white
+}
+
+palette {
+  color: #F26627;
+  color: #F9A26C;
+  color: #EFEEEE;
+  color: #9BD7D1;
+  color: #325D79;
 }
