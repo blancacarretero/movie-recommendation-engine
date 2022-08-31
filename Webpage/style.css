@@ -11,19 +11,27 @@
   background-color: rgb(249,162,108);
 }
 
+
+
 body {
     
     background-color:rgb(155,215,209)!important;
     font-family: 'Courier New', monospace;
     text-align: center;
 }
+.carousel {
+  width:1040px;
+  height:860px;
+}
+
+
 .col-md-5 {
   
   background-color: rgb(155,215,209)
 } 
-.col-md-6 {
+.col-md-2 {
   
   background-color: rgb(249,162,108)
 
 
-} 
+}
