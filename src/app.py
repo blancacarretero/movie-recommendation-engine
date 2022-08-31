@@ -22,6 +22,8 @@ release_urls = {
 
 review_urls = {
     'cult':'/static/Resources/by_review_year/cult-classics.png',
+    'disney':'/static/Resources/by_review_year/disney-classics.png',
+    'disney2':'/static/Resources/by_review_year/disney-classics2.png',
     'thriller_mystery':'/static/Resources/by_review_year/Thriller-Mystery.png',
     'animation_adventure':'/static/Resources/by_review_year/Animation-Adventure.png',
     'war_action':'/static/Resources/by_review_year/War-Action.png'
