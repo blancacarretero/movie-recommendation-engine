@@ -4,7 +4,7 @@ In this project we will be analyzing a MovieLens movie ratings database provided
 
 <img src="https://bigpicturefilmclub.com/wp-content/uploads/2020/05/hinh-mo-bai_chong-dich-corona_elle-man_0320.jpg" width="85%">
 
-### Background
+## Background
 
 The following methods and dependencies will be used:
 
@@ -18,7 +18,7 @@ The following methods and dependencies will be used:
 https://drive.google.com/drive/folders/1XDCefA1BaBP1fFcp_JU2vIuuGGqWGIFf?usp=sharing
 
 
-### Preparing the Data
+## Preparing the Data
 
-### Cleaning the Data
+## Cleaning the Data
 
