@@ -1,14 +1,15 @@
 .jumbotron {
   
   background-color:rgb(50,93,121);
+  color: white;
 }
 .navbar2 {
   padding: 0px;
   margin: 0px;
 }
-.navbar {
-  
-  background-color: rgb(249,162,108);
+
+.navbar-custom {
+  background-color: #4433cc;
 }
 
 
@@ -28,10 +29,19 @@ body {
 .col-md-5 {
   
   background-color: rgb(155,215,209)
+  
 } 
 .col-md-2 {
   
   background-color: rgb(249,162,108)
 
-
+}
+.col-md-2 {
+  
+  color: rgb(50,93,121);
+  
+}
+h2 {
+  font-weight: bolder;
+  color: white
 }
