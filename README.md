@@ -2,7 +2,7 @@
 
 In this project we will be analyzing a MovieLens movie ratings database provided by [GroupLens Research](https://grouplens.org/datasets/movielens/).
 
-<img src="https://bigpicturefilmclub.com/wp-content/uploads/2020/05/hinh-mo-bai_chong-dich-corona_elle-man_0320.jpg" width="85%">
+<img src="https://bigpicturefilmclub.com/wp-content/uploads/2020/05/hinh-mo-bai_chong-dich-corona_elle-man_0320.jpg" width="95%">
 
 ## Background
 
