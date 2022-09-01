@@ -4,9 +4,9 @@ In this project we will be analyzing a MovieLens movie ratings database provided
 
 <img src="https://bigpicturefilmclub.com/wp-content/uploads/2020/05/hinh-mo-bai_chong-dich-corona_elle-man_0320.jpg" width="95%">
 
-## Background
+## Preparing the Data
 
-The following methods and dependencies will be used:
+The following methods and dependencies were used:
 
 * Python / Flask
 * Pandas
@@ -17,8 +17,9 @@ The following methods and dependencies will be used:
 
 https://drive.google.com/drive/folders/1XDCefA1BaBP1fFcp_JU2vIuuGGqWGIFf?usp=sharing
 
-
-## Preparing the Data
-
 ## Cleaning the Data
+Cleaned the data prior to analysis. Only wanted relevant tags and removed from the 'relevance' Column anything that was less than 85.
+``` python
+relevant_genomes = reduced_genome_scores_df.loc[reduced_genome_scores_df['relevance'] > .85]
+```
 
