@@ -70,3 +70,23 @@ data = {
     'genreAvg':genre_averages_dict,
     'ratings':ratings_dict
 }
+
+# function to produce plots for each inputted genre over the years (avg rating over the years)
+def plot_genre_by_year(genre):
+    ratings_dict = {
+        'Year': [],
+        'Average Rating': []
+    }
+
+    # years list in string format
+    years = ['19'+str(i) for i in range(60, 100)]+['200'+str(i) for i in range(0,10)]+['20'+str(i) for i in range(10,19)]
+
+    # year_labels = years[::4]
+    for year in years:
+        try:
+            avg = ratings_by_year(genre,year)
+            ratings_dict['Average Rating'].append(avg)
+            ratings_dict['Year'].append(year)
+        except:
+            pass
+    return ratings_dict

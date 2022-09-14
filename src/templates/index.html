@@ -62,8 +62,10 @@
     <div class="row">
       <!-- Content -->
       <div class="col-md-10">
-        <div id="plot">
-        </div>
+        <!-- <div id="button"><select id="selDataset" onchange="optionChanged(this.value)"></select></div> -->
+        <div id="buttons"></div>
+        <div id="heading"></div>
+        <div id="plot"></div>
         <div>
         </div>
       </div>
@@ -87,7 +89,8 @@
       </div>
     </div>
   </div>
-  <script src="./static/js/barChart.js"></script>
+  <!-- <script src="{{ url_for('static', filename='js/barChart.js') }}"></script> -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
                 

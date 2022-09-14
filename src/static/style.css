@@ -23,6 +23,10 @@
   background-color: #4433cc;
 }
 
+.btn {
+  margin:2px;
+}
+
 body {
   background-color:rgb(155,215,209)!important;
   font-family: 'Courier New', monospace;

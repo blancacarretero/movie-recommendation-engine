@@ -58,46 +58,35 @@ function Line(x, y) {
         }
       };
 
-    Plotly.newPlot('linePlot', data, layout);
+    Plotly.newPlot('plot', data, layout);
 }
-
-function change(data) {
-    let div = d3.select("#sample-metadata");
-    let table = div.select("table");
-    table.html("");
-};
-
 
 const url = "/genre_data";
 
 d3.json(url).then((data) => {
     const genres = data.genreAvg.Genre
-    console.log(genres)
-    d3.select("#selDataset")
-        .selectAll("option")
-        .data(genres)
-        .enter()
-        .append("option")
-        .text(d=>d)
-        .attr("val", d=>d);
 
-    optionChanged(d3.select("#selDataset").property("val"));
+    for (let i = 0; i < genres.length; i++) {
+        console.log(genres[i])
+        d3.select()
+        let buttonDiv = d3.select("#buttons")
+        buttonDiv.append("button").text(genres[i]).classed('btn btn-info', true).attr("onclick",`optionChanged('${genres[i]}')`);
+      }
 });
 
 // master function to grab data and display charts based on value input
-function optionChanged(val) {
-    d3.json(url).then((data) => {
-        let plot = d3.select("plot");
-        plot.html(val);
-        // let metadata = data.filter(data => data.id == val);
-        // bar graph
-        // const avgRate = data.genreAvg.avgRate
-        // const genre = data.genreAvg.Genre
-        // Bar(genre, avgRate);
 
-        // line graph
-        const Year = data.ratings.Year
-        const avgRating = data.ratings.avgRate
-        Line(Year, avgRating)
+function optionChanged(val) {
+    let url = `/data/${val}`
+    d3.json(url).then((data) => {
+
+        let heading = d3.select("#heading");
+        heading.html(`<h1>${val}</h1>`);
+        
+        let averageRating = data['Average Rating'];
+        let Year = data['Year'];
+        console.log(averageRating);
+
+        Line(Year, averageRating);
     });
 };

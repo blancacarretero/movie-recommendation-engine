@@ -16,13 +16,17 @@ def data_creation(data, percent, class_labels, group=None):
 def chart_data():
    return jsonify(data.data)
 
+@app.route('/data/<val>')
+def data_retrieval(val):
+    return data.plot_genre_by_year(val)
+
 @app.route("/")
 def index():
     return render_template("index.html", data=data)
 
 @app.route("/genre")
 def genre():
-    return render_template("genre.html", data=data)
+    return render_template("index.html", data=data, genre=data.plot_genre_by_year)
 
 @app.route("/release_year")
 def release_year():
