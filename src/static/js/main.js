@@ -39,8 +39,8 @@ function Bar(x, y) {
         }
       };
 
-    Plotly.newPlot('pieChart', data, layout);
-}
+    Plotly.newPlot('plot', data, layout);
+};
 
 function Line(x, y) {
     var data = [{
@@ -59,20 +59,31 @@ function Line(x, y) {
       };
 
     Plotly.newPlot('plot', data, layout);
-}
+};
 
-const url = "/genre_data";
+function index() {
+    const url = "/genre_data";
+    d3.json(url).then((data) => {
+        // bar graph
+        const avgRate = data.genreAvg.avgRate;
+        const genre = data.genreAvg.Genre;
+        Bar(genre, avgRate);
+    });
+};
 
-d3.json(url).then((data) => {
-    const genres = data.genreAvg.Genre
-
-    for (let i = 0; i < genres.length; i++) {
-        console.log(genres[i])
-        d3.select()
-        let buttonDiv = d3.select("#buttons")
-        buttonDiv.append("button").text(genres[i]).classed('btn btn-info', true).attr("onclick",`optionChanged('${genres[i]}')`);
-      }
-});
+function genre() {
+    const url = "/genre_data";
+    d3.json(url).then((data) => {
+        // genre buttons
+        const genres = data.genreAvg.Genre
+        for (let i = 0; i < genres.length; i++) {
+            console.log(genres[i])
+            d3.select()
+            let buttonDiv = d3.select("#buttons")
+            buttonDiv.append("button").text(genres[i]).classed('btn btn-info', true).attr("onclick",`optionChanged('${genres[i]}')`);
+        };
+    });
+};
 
 // master function to grab data and display charts based on value input
 

@@ -4,14 +4,6 @@ import data
 
 app = Flask(__name__)
 
-def data_creation(data, percent, class_labels, group=None):
-   for index, item in enumerate(percent):
-       data_instance = {}
-       data_instance['category'] = class_labels[index]
-       data_instance['value'] = item
-       data_instance['group'] = group
-       data.append(data_instance)
-
 @app.route('/genre_data')
 def chart_data():
    return jsonify(data.data)
@@ -20,13 +12,15 @@ def chart_data():
 def data_retrieval(val):
     return data.plot_genre_by_year(val)
 
+index_js = "<script src='/static/js/main.js'></script><script>index();</script>"
 @app.route("/")
 def index():
-    return render_template("index.html", data=data)
+    return render_template("index.html", data=data, js=index_js)
 
+genre_js = "<script src='/static/js/main.js'></script><script>genre();</script>"
 @app.route("/genre")
 def genre():
-    return render_template("index.html", data=data, genre=data.plot_genre_by_year)
+    return render_template("index.html", data=data, genre=data.plot_genre_by_year, js=genre_js)
 
 @app.route("/release_year")
 def release_year():

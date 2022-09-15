@@ -63,10 +63,11 @@
       <!-- Content -->
       <div class="col-md-10">
         <!-- <div id="button"><select id="selDataset" onchange="optionChanged(this.value)"></select></div> -->
-        <div id="buttons"></div>
         <div id="heading"></div>
+        <div id="buttons"></div>
         <div id="plot"></div>
         <div>
+          {{js | safe}}
         </div>
       </div>
       <!-- SideBar -->
@@ -76,7 +77,7 @@
           <li><a href="genre"><button type="button" class="btn btn-info"><strong>Rating by Genre</strong></button></a></li>
           <li><a href="release_year"><button type="button" class="btn btn-info"><strong>Rating by Release Year</strong></button></a></li>
           <li><a href="review_year"><button type="button" class="btn btn-info"><strong>Rating by Review Year</strong></button></a></li>
-          <li><a href="machine_learning"><button type="button" class="btn btn-info"><strong>Rating by Machine Learning</strong></button></a></li>
+          <li><a href="machine_learning"><button type="button" class="btn btn-info"><strong>Machine Learning</strong></button></a></li>
         </div>
         <div class="team">
           <h2>Dataflix Team</h2> 
